@@ -1,0 +1,45 @@
+<html>
+
+<head>
+    <link href="style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+
+    <div id="header">
+        <h1>Puzzle!</h1>
+        <h2>Completa il puzzle trascinando i pezzi nel quadrato qua sotto.</h2>
+    </div>
+
+    <span id="box1"></span>
+    <span id="box2"></span>
+    <span id="box3"></span>
+    <span id="box4"></span>
+    <span id="box5"></span>
+    <span id="box6"></span>
+    <span id="box7"></span>
+    <span id="box8"></span>
+    <span id="box9"></span>
+
+    <button onclick="checkPuzzle();" id="check">Fatto!</button>
+    <button onclick="resetPiecesSoft();veil();" id="reset">Riavvia</button>
+    <button onclick="unveilTimed();" id="hint">Aiuto!</button>
+
+    <p id="messaggio"></p>
+    <span id="map1"></span>
+    <span id="map2"></span>
+
+    <div id="footer">
+        <h2>Cambia livello:</h2>
+        <button onclick="changeLevel(0);" style="color: green">Livello 0</button>
+        <button onclick="changeLevel(1);" style="color: green">Livello 1</button>
+        <button onclick="changeLevel(2);" style="color: green">Livello 2</button>
+        <button onclick="changeLevel(3);" style="color: green">Livello 3</button>
+        <button onclick="changeLevel(4);" style="color: red">Livello 4</button>
+        <button onclick="changeLevel(5);" style="color: red">Livello 5</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
